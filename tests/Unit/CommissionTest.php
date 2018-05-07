@@ -30,7 +30,7 @@ class CommissionTest extends TestCase
     }
 
     /**
-     * Test de la commission perçue par le site.
+     * Test de la commission prélevée par le site.
      *
      * @return void
      */

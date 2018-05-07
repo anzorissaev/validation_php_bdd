@@ -13,12 +13,12 @@ class Commission
 {
 
     private $donation;
-    private $commission;
+    private $commissionPercentage;
 
 
     public function __construct($commission)
     {
-        $this->commission = $commission;
+        $this->commissionPercentage = $commission;
     }
 
     /**
