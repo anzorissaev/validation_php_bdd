@@ -12,9 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $user = Auth::user();
+    return view('home', ['user' => $user]);
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/edit','AccountController@edit')->name('user.edit');
+Route::put('/update','AccountController@update')->name('user.update');

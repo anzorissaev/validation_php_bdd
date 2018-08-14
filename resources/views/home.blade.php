@@ -14,9 +14,6 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                        <div> {{$user->lastname}} {{$user->firstname}} </div>
-
                 </div>
                 </div>
             </div>
