@@ -7,7 +7,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 
-class HomeController extends Controller
+class UserController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -28,7 +28,8 @@ class HomeController extends Controller
    {
 
         $user = Auth::user();
-        return view('home',['user' => $user]);
+        $project = $user->projects();
+        return view('home',['user' => $user,'project'=>$project]);
     }
 }
 
