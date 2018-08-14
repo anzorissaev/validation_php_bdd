@@ -8,11 +8,6 @@
                 <form action="{{ URL::route('user.update', ['user'=> $user]) }}" method="post">
                     @csrf
                     @method('PUT')
-
-                    {{--@foreach ($errors->all() as $error)--}}
-                    {{--<li>{{ $error }}</li>--}}
-                    {{--@endforeach--}}
-
                     <div class="card bg-light m-5 pb-5 pl-5 pr-5 pt-3">
 
                         <div class="card-header mt-1 mb-5 font-weight-bold border"><h4 class="mb-0">Mes Infos</h4></div>

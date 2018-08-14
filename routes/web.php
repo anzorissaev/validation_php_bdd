@@ -20,5 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/edit','AccountController@edit')->name('user.edit');
 Route::put('/update','AccountController@update')->name('user.update');
+
+Route::get('/project','ProjectController@index')->name('user.project');
