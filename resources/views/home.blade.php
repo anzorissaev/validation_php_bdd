@@ -1,19 +1,164 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="justify-content-between">
-                <div class="card-header">Hello</div>
+    {{--<div class="container-fluid bg-info">--}}
 
-                <div class="card-body">
-                    
-                </div>
-                </div>
+        <div class="container">
+
+            <div class="row">
+
+                <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 border bg-info">
+
+                    <h1> article </h1>
+                    <p> Thalassius vero ea tempestate praefectus praetorio praesens
+                        ipse quoque adrogantis ingenii, considerans incitationem eius ad
+                        multorum augeri discrimina, non maturitate vel consiliis mitigabat
+                        aliquotiens celsae potestates iras principum molliverunt, sed adversando
+                        iurgandoque cum parum congrueret. </p>
+
+                    <a href="#" class="btn btn-dark mb-3">LIRE</a>
+
+                </article>
+                <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 border bg-info">
+
+                    <h1> article </h1>
+                    <p> Thalassius vero ea tempestate praefectus praetorio praesens
+                        ipse quoque adrogantis ingenii, considerans incitationem eius ad
+                        multorum augeri discrimina, non maturitate vel consiliis mitigabat
+                        aliquotiens celsae potestates iras principum molliverunt, sed adversando
+                        iurgandoque cum parum congrueret. </p>
+
+                </article>
+                <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 border bg-info">
+
+                    <h1> article </h1>
+                    <p> Thalassius vero ea tempestate praefectus praetorio praesens
+                        ipse quoque adrogantis ingenii, considerans incitationem eius ad
+                        multorum augeri discrimina, non maturitate vel consiliis mitigabat
+                        aliquotiens celsae potestates iras principum molliverunt, sed adversando
+                        iurgandoque cum parum congrueret. </p>
+
+                </article>
+
+
+
+
+
+
+
+
+
+
+
+
+                <article class="col-xs-12 col-sm-12 col-md-12 col-lg-3 border bg-danger">
+
+                    <h1> article </h1>
+                    <p> Thalassius vero ea tempestate praefectus praetorio praesens
+                        ipse quoque adrogantis ingenii, considerans incitationem eius ad
+                        multorum augeri discrimina, non maturitate vel consiliis mitigabat
+                        aliquotiens celsae potestates iras principum molliverunt, sed adversando
+                        iurgandoque cum parum congrueret. </p>
+
+                </article>
+                <article class="col-xs-12 col-sm-12 col-md-4 col-lg-3 border bg-danger">
+
+                    <h1> article </h1>
+                    <p> Thalassius vero ea tempestate praefectus praetorio praesens
+                        ipse quoque adrogantis ingenii, considerans incitationem eius ad
+                        multorum augeri discrimina, non maturitate vel consiliis mitigabat
+                        aliquotiens celsae potestates iras principum molliverunt, sed adversando
+                        iurgandoque cum parum congrueret. </p>
+
+                </article>
+                <article class="col-xs-12 col-sm-12 col-md-4 offset-md-4 col-lg-3 offset-lg-0 border bg-danger">
+
+                    <h1> article </h1>
+                    <p> Thalassius vero ea tempestate praefectus praetorio praesens
+                        ipse quoque adrogantis ingenii, considerans incitationem eius ad
+                        multorum augeri discrimina, non maturitate vel consiliis mitigabat
+                        aliquotiens celsae potestates iras principum molliverunt, sed adversando
+                        iurgandoque cum parum congrueret. </p>
+
+                </article>
+                <article class="col-xs-12 col-sm-12 col-md-12 col-lg-3  border bg-danger">
+
+                    <h1> article </h1>
+                    <p> Thalassius vero ea tempestate praefectus praetorio praesens
+                        ipse quoque adrogantis ingenii, considerans incitationem eius ad
+                        multorum augeri discrimina, non maturitate vel consiliis mitigabat
+                        aliquotiens celsae potestates iras principum molliverunt, sed adversando
+                        iurgandoque cum parum congrueret. </p>
+
+                </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <article class="col-lg-12 col-md-4 col-sm-6 border bg-secondary">
+
+                    <h1> Article </h1>
+                    <p> Thalassius vero ea tempestate praefectus praetorio praesens
+                        ipse quoque adrogantis ingenii, considerans incitationem eius ad.
+                    </p>
+
+                </article>
+                <article class="col-lg-12 col-md-4 col-sm-6 border bg-secondary">
+
+                    <h1> Article </h1>
+                    <p> Thalassius vero ea tempestate praefectus praetorio praesens
+                        ipse quoque adrogantis ingenii, considerans incitationem eius ad.
+                    </p>
+
+                </article>
+                <article class="col-lg-12 col-md-4 col-sm-6 border bg-secondary">
+
+                    <h1> Article </h1>
+                    <p> Thalassius vero ea tempestate praefectus praetorio praesens
+                        ipse quoque adrogantis ingenii, considerans incitationem eius ad.
+                    </p>
+
+                </article>
+                <article class="col-lg-12 col-md-4 col-sm-6 border bg-secondary">
+
+                    <h1> Article </h1>
+                    <p> Thalassius vero ea tempestate praefectus praetorio praesens
+                        ipse quoque adrogantis ingenii, considerans incitationem eius ad.
+                    </p>
+
+                </article>
+                <article class="col-lg-12 col-md-4 col-sm-6 border bg-secondary">
+
+                    <h1> Article </h1>
+                    <p> Thalassius vero ea tempestate praefectus praetorio praesens
+                        ipse quoque adrogantis ingenii, considerans incitationem eius ad.
+                    </p>
+
+                </article>
+                <article class="col-lg-12 col-md-4 col-sm-6 border bg-secondary">
+
+                    <h1> Article </h1>
+                    <p> Thalassius vero ea tempestate praefectus praetorio praesens
+                        ipse quoque adrogantis ingenii, considerans incitationem eius ad.
+                    </p>
+
+                </article>
+
+
             </div>
+
         </div>
-    </div>
-</div>
+
+    {{--</div>--}}
 @endsection
