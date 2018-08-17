@@ -4,20 +4,36 @@
 
    <div class="container">
       <div class="row justify-content-center">
-         <div class="col-md-8">
-            <div class="card">
-               <div class="justify-content-between">
-                  <div class="card-header">Mes Projets</div>
 
-                  <div class="card-body">1</div>
-                  <div class="card-body">2</div>
 
-               </div>
-            </div>
-         </div>
-          <div class="col-md-8">
-              <div class="mt-3"><button type="button" class="btn btn-success">Crée un projet</button></div>
+          @foreach($projects as $project)
+          <div class="col-md-8 mt-3">
+              <div class="card">
+                  <div class="justify-content-between">
+                      <div class="card-header"> <h5>{{$project->name}} de {{ $project->user->lastname }}</h5></div>
+
+
+                      <div class="card-body">
+
+                          <p class="card-text">{{$project->description}}</p>
+                          <span> {{ $project->created_at }} </span>
+                          <a href="{{route('user.projectinfo',['project'=> $project])}}" class="btn btn-primary">INFO</a>
+                          <a href="#" class="btn btn-success"> Faire un Dob</a>
+                      </div>
+
+
+                  </div>
+              </div>
           </div>
+          @endforeach
+
+
+          <div class="col-md-8">
+              <div class="mt-3"><a href="{{route('user.projectcreate')}}" class="btn btn-success">Crée un Projet</a> </div>
+          </div>
+
+
+
       </div>
    </div>
 

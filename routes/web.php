@@ -26,4 +26,17 @@ Route::put('/update','AccountController@update')->name('user.update');
 
 
 Route::get('/project','ProjectController@index')->name('user.project');
-Route::get('/creatproject','ProjectController@create')->name('user.creatproject');
+Route::get('/projectcreate','ProjectController@create')->name('user.projectcreate');
+
+
+Route::post('/projectadd','ProjectController@store')->name('user.projectadd');
+
+Route::get('/project/{project}','ProjectController@edit')->name('user.projectinfo');
+
+
+
+Route::get('/myprojects/','ProjectController@show')->name('user.myprojects');
+
+Route::get('/myproject/{id}','ProjectController@editmyproject')->name('user.updateMyProject');
+Route::put('/{idProject}/updatemyproject','ProjectController@update')->name('user.updatevalidate');
+

@@ -28,7 +28,7 @@ class UserController extends Controller
    {
 
         $user = Auth::user();
-        $project = $user->projects();
+        $project = $user->all();
         return view('home',['user' => $user,'project'=>$project]);
     }
 }
