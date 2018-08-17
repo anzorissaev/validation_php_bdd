@@ -18,7 +18,6 @@
                           <p class="card-text">{{$project->description}}</p>
                           <span> {{ $project->created_at }} </span>
                           <a href="{{route('user.projectinfo',['project'=> $project])}}" class="btn btn-primary">INFO</a>
-                          <a href="#" class="btn btn-success"> Faire un Dob</a>
                       </div>
 
 

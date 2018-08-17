@@ -29,4 +29,12 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Project');
     }
+
+    public function dons()
+    {
+        return $this->hasMany('App\Don');
+    }
+
+
+
 }
