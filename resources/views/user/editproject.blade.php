@@ -16,7 +16,7 @@
                                 <div class="card-body">
                                     <p class="card-text">{{$projects->description}}</p>
                                     <span> {{ $projects->created_at }} </span>
-                                    <a href="#" class="btn btn-success"> Faire un Dob</a>
+                                    <a href="{{route('user.don.create')}}" class="btn btn-success"> Faire un Don</a>
 
                                 </div>
                             </div>
