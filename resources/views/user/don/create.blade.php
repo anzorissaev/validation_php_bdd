@@ -2,6 +2,7 @@
 
 @section('content')
 
+    <div class="container">
     <div class="col-12">
         <div>
             <h1>Faire un Don</h1>
@@ -10,7 +11,7 @@
             <h5>Participer d'avantage à l'Association {{config('app.name')}}</h5>
 
             <div class="col-12 col-md-4 offset-md-4 mt-5">
-                <form action="{{route('user.don.store')}}" method="post">
+                <form action="{{route('user.don.store',['id'=>$projects->id])}}" method="post">
                     @csrf
                     <div class="input-group">
                         <input type="text" name="amount" class="form-control text-right">
@@ -26,5 +27,5 @@
         </div>
 
     </div>
-
+    </div>
 @endsection

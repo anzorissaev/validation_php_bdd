@@ -15,7 +15,7 @@ class CreateDonsTable extends Migration
     {
         Schema::create('dons', function (Blueprint $table) {
             $table->increments('id');
-            $table->float('amount','8','2');
+            $table->string('amount');
             $table->unsignedInteger('user_id');
             $table->unsignedInteger('project_id');
             $table->foreign('user_id')->references('id')->on('users');

@@ -40,6 +40,6 @@ Route::get('/myprojects/','ProjectController@show')->name('user.myprojects');
 Route::get('/myproject/{id}','ProjectController@editmyproject')->name('user.updateMyProject');
 Route::put('/{idProject}/updatemyproject','ProjectController@update')->name('user.updatevalidate');
 
-Route::get('/user/don/','DonsController@create')->name('user.don.create');
-Route::post('/user/don', 'DonsController@store')->name('user.don.store');
+Route::get('/user/don/{id}','DonsController@create')->name('user.don.create');
+Route::post('/user/don/{id}', 'DonsController@store')->name('user.don.store');
 
