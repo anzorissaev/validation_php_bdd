@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8 mt-3">
-                <form action="{{ URL::route('user.update', ['user'=> $user]) }}" method="post">
+                <form action="{{ URL::route('user.update', ['user'=> $user]) }}" method="POST">
                     @csrf
                     @method('PUT')
                     <div class="card bg-light m-5 pb-5 pl-5 pr-5 pt-3">

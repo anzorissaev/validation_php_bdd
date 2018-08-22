@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 
 
+use App\Project;
 use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
@@ -14,10 +15,6 @@ class UserController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
 
     /**
      * Show the application dashboard.
@@ -28,8 +25,8 @@ class UserController extends Controller
    {
 
         $user = Auth::user();
-        $project = $user->all();
-        return view('home',['user' => $user,'project'=>$project]);
+        $projects = Project::with('user')->orderBy('created_at', 'desc')->get();
+        return view('home',compact('user','projects'));
     }
 }
 

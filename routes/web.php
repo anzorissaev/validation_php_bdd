@@ -11,15 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-
-    $user = Auth::user();
-    return view('home', ['user' => $user]);
-});
-
 Auth::routes();
 
-Route::get('/home', 'UserController@index')->name('home');
+Route::get('/', 'UserController@index')->name('home');
 
 Route::get('/edit','AccountController@edit')->name('user.edit');
 Route::put('/update','AccountController@update')->name('user.update');
@@ -31,7 +25,7 @@ Route::get('/projectcreate','ProjectController@create')->name('user.projectcreat
 
 Route::post('/projectadd','ProjectController@store')->name('user.projectadd');
 
-Route::get('/project/{project}','ProjectController@edit')->name('user.projectinfo');
+Route::get('/project/{project}','ProjectController@edit')->name('user.projectinfo')->middleware('auth');
 
 
 

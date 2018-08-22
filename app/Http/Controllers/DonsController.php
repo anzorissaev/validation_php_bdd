@@ -20,7 +20,7 @@ class DonsController extends Controller
     {
         $userId = Auth::id();
         $projects = Project::where('user_id', $userId)->find($id);
-        dd($projects);
+//        dd($projects);
         return view('user.don.create',['projects' => $projects]);
     }
 
@@ -28,6 +28,7 @@ class DonsController extends Controller
     public function store(Request $request, $id)
     {
         $userId = Auth::id();
+//        dd($userId);
 
         $validatedData = $request->validate([
             'amount' => 'string',
@@ -36,6 +37,7 @@ class DonsController extends Controller
         $dons->amount = $validatedData['amount'];
         $dons->user_id = $userId;
         $dons->project_id = $id;
+        dd($dons);
         $dons->save();
 
         return redirect()->route('user.project');
@@ -46,7 +48,6 @@ class DonsController extends Controller
     {
         //
     }
-
 
     public function edit($id)
     {

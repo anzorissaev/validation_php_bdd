@@ -4,11 +4,12 @@
 
 
     <div class="container">
-        <div class="card text-center">
+        <div class="card text-center ">
             <div class="card-body">
                 <img src="https://previews.123rf.com/images/imagevectors/imagevectors1603/imagevectors160300850/53026871-flat-ic%C3%B4ne-noire-profil-web-en-cercle-sur-fond-blanc.jpg" class="img-thumbnail"  height="70" width="70" alt="">
-                <p class="card-text"> {{$userProjects->lastname}} {{$userProjects->firstname}} </p>
-                <a href="{{route('user.edit')}}" class="btn btn-primary">Go somewhere</a>
+                <h4 class="card-text mt-2"> {{$userProjects->lastname}} {{$userProjects->firstname}}</h4>
+                <p> {{$userProjects->email}}</p>
+                <a href="{{route('user.edit')}}" class="btn btn-primary">Modifier</a>
             </div>
 
         </div>
