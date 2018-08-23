@@ -1,24 +1,23 @@
-{{--@foreach($userProjects->projects as $userProject)--}}
-    <div class="col-md-12 mt-3">
-        <div class="card">
-            <div class="justify-content-between">
-                <div class="card-header">
-                    <h5>
-                        {{--{{$userProject->name}}--}}
-                        {{--de {{ $userProject->user->lastname }}--}}
-                    </h5>
-                </div>
+@extends('layouts.app')
 
 
-                <div class="card-body">
 
-                    <p class="card-text">
-                        {{--{{$userProject->description}}--}}
-                    </p>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-{{--@endforeach--}}
+@section('content')
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Projet</th>
+            <th scope="col">Montant</th>
+        </tr>
+        </thead>
+        @foreach($user_dons as $user_don)
+            <tbody>
+            <tr>
+                <th scope="row"></th>
+                <td>{{$user_don->a}}</td>
+            </tr>
+            </tbody>
+            @dd($user_don)
+        @endforeach
+    </table>
+@stop

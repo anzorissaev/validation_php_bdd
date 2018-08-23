@@ -24,7 +24,7 @@
                                 <div class="card-header"><h5>{{$userProject->name}}
                                         de {{ $userProject->user->lastname }}</h5></div>
 
-
+                                <div class="card-body">
                                 <div class="card-body">
 
                                     <p class="card-text">{{$userProject->description}}</p>
@@ -49,7 +49,7 @@
             <div class="col-md-6">
                 <div class="col-md-12 text-center mt-2"><h4 class="mt-3">Mes Dons</h4></div>
 
-                @include('user.don.mesdons')
+                {{--@include('user.don.mesdons')--}}
 
             </div>
 

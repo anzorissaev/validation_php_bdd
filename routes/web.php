@@ -36,6 +36,8 @@ Route::get('/myproject/{id}','ProjectController@editmyproject')->name('user.upda
 Route::put('/{idProject}/updatemyproject','ProjectController@update')->name('user.updatevalidate');
 
 
-Route::get('/user/don/{id}','DonsController@create')->name('user.don.create');
-Route::post('/user/don/{id}', 'DonsController@store')->name('user.don.store');
+Route::get('/don','DonsController@index');
+
+Route::get('/user/get/{id}','DonsController@create')->name('user.don.create');
+Route::post('/user/post/{id}', 'DonsController@store')->name('user.don.store');
 

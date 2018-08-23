@@ -14,7 +14,7 @@ class ProjectController extends Controller
     public function index()
     {
         $projects = Project::with('user')->orderBy('created_at', 'desc')->get();
-
+//        dd($projects);
         return view('user.project', ['projects' => $projects]);
     }
 
@@ -31,6 +31,7 @@ class ProjectController extends Controller
 
         $userProjects = Auth::user();
         $userProjects->load('projects');
+//        dd($userProjects);
         return view('user.myproject', ['userProjects' => $userProjects]);
     }
 

@@ -16,6 +16,6 @@ class Project extends Model
 
     public function dons()
     {
-        return $this->hasMany('App\Don');
+        return $this->hasMany('App\Dons');
     }
 }

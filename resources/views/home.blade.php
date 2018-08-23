@@ -15,7 +15,6 @@
 
                                 <p class="card-text">{{$project->description}}</p>
                                 <span class="badge badge-pill badge-dark"> {{ $project->created_at }} </span> <br>
-                                {{--<a href="{{route('user.projectinfo',['project'=> $project])}}" class="btn btn-primary">INFO</a>--}}
                             </div>
 
 

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Dons;
 use App\Project;
 use Auth;
+use DB;
 use Illuminate\Http\Request;
 
 class DonsController extends Controller
@@ -12,15 +13,18 @@ class DonsController extends Controller
 
     public function index()
     {
-        //
+        $project_name = DB::select('SELECT name FROM projects');
+        dd($project_name);
+        $authuser = Auth::id();
+        $user_dons = DB::select("SELECT amount,user_id,project_id From dons WHERE user_id = {$authuser}");
+        dd($user_dons);
+        return view('user.don.mesdons',['user_dons'=>$user_dons]);
     }
 
 
     public function create($id)
     {
-        $userId = Auth::id();
-        $projects = Project::where('user_id', $userId)->find($id);
-//        dd($projects);
+        $projects = Project::find($id);
         return view('user.don.create',['projects' => $projects]);
     }
 
@@ -37,7 +41,7 @@ class DonsController extends Controller
         $dons->amount = $validatedData['amount'];
         $dons->user_id = $userId;
         $dons->project_id = $id;
-        dd($dons);
+//        dd($dons);
         $dons->save();
 
         return redirect()->route('user.project');

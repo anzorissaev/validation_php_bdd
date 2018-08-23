@@ -3,8 +3,7 @@
 namespace App\Http\Controllers;
 
 
-
-
+use App\User;
 use DB;
 use Illuminate\Support\Facades\Auth;
 
@@ -22,7 +21,7 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-   {
+    {
 
         $user = Auth::user();
 //        dd($user);
@@ -32,7 +31,8 @@ class UserController extends Controller
 //        $projects = Project::with('user')->orderBy('created_at', 'desc')->get();
 //        dd($projects);
 //        return view('home',compact('user','projects'));
-        return view('home',['user'=>$user],['projects'=>$projects]);
+        return view('home', ['user' => $user], ['projects' => $projects]);
     }
+
 }
 
