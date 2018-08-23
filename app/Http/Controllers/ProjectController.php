@@ -78,8 +78,11 @@ class ProjectController extends Controller
     }
 
 
-    public function destroy()
+    public function destroy($id)
     {
+        DB::delete("DELETE FROM projects WHERE id = '$id'");
+
+        return redirect('/');
     }
 
 

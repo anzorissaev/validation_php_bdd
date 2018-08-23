@@ -31,8 +31,10 @@ Route::get('/project/{project}','ProjectController@edit')->name('user.projectinf
 
 Route::get('/myprojects/','ProjectController@show')->name('user.myprojects');
 
-Route::get('/myproject/{id}','ProjectController@editmyproject')->name('user.updateMyProject');
+Route::get('/delete/{id}','ProjectController@destroy')->name('user.delete.project');
+Route::get('/myproject/{id}','ProjectController@editmyproject')->name('user.update.project');
 Route::put('/{idProject}/updatemyproject','ProjectController@update')->name('user.updatevalidate');
+
 
 Route::get('/user/don/{id}','DonsController@create')->name('user.don.create');
 Route::post('/user/don/{id}', 'DonsController@store')->name('user.don.store');
