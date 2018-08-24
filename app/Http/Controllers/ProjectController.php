@@ -74,8 +74,9 @@ class ProjectController extends Controller
         $project->name = $request->input('name');
         $project->description = $request->input('description');
         $project->save();
+//        dd($project);
 
-        return view('home');
+        return redirect('project');
     }
 
 
