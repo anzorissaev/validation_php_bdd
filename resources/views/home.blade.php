@@ -7,19 +7,35 @@
 
         <div class="row border-dark">
 
-            <div class="bg-primary border border-dark col-xl-12 col-lg-6 col-md-6">
+            <div class="bg-primary border border-dark col-lg-3 col-md-12 col-sm-6">
                 <p>Thalassius vero ea tempestate praefectus praetorio praesens.</p>
             </div>
 
-            <div class="bg-primary border border-dark col-xl-12 col-lg-6 col-md-6">
+            <div class="bg-primary border border-dark col-lg-3 col-md-4 col-sm-6">
                 <p>Thalassius vero ea tempestate praefectus praetorio praesens.</p>
             </div>
 
-            <div class="bg-primary border border-dark col-xl-12 col-lg-12 col-md-6">
+            <div class="bg-primary border border-dark col-lg-3 col-md-4 col-sm-6">
                 <p>Thalassius vero ea tempestate praefectus praetorio praesens.</p>
             </div>
 
-            <div class="bg-primary border border-dark col-xl-12 col-lg-12 col-md-6">
+            <div class="bg-primary border border-dark col-lg-3 col-md-4 col-sm-6">
+                <p>Thalassius vero ea tempestate praefectus praetorio praesens.</p>
+            </div>
+
+            <div class="bg-primary border border-dark col-lg-3 col-sm-6">
+                <p>Thalassius vero ea tempestate praefectus praetorio praesens.</p>
+            </div>
+
+            <div class="bg-primary border border-dark col-lg-3 col-md-6 col-sm-6">
+                <p>Thalassius vero ea tempestate praefectus praetorio praesens.</p>
+            </div>
+
+            <div class="bg-primary border border-dark col-lg-3 col-md-6 col-sm-6">
+                <p>Thalassius vero ea tempestate praefectus praetorio praesens.</p>
+            </div>
+
+            <div class="bg-primary border border-dark col-lg-3 col-sm-6">
                 <p>Thalassius vero ea tempestate praefectus praetorio praesens.</p>
             </div>
 
