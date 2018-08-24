@@ -25,37 +25,30 @@
                                         de {{ $userProject->user->lastname }}</h5></div>
 
                                 <div class="card-body">
-                                <div class="card-body">
+                                    <div class="card-body">
 
-                                    <p class="card-text">{{$userProject->description}}</p>
+                                        <p class="card-text">{{$userProject->description}}</p>
 
 
-                                    <a href="{{route('user.update.project',['id'=>$userProject->id])}}"
-                                       class="btn btn-primary">Modifier</a>
+                                        <a href="{{route('user.update.project',['id'=>$userProject->id])}}"
+                                           class="btn btn-primary">Modifier</a>
 
-                                    <a href="{{route('user.delete.project',['id'=>$userProject->id])}}"
+                                        <a href="{{route('user.delete.project',['id'=>$userProject->id])}}"
 
-                                       class="btn btn-danger">Suprimer</a><br>
-                                    <span class="badge badge-pill badge-dark"> {{ $userProject->created_at }}</span>
+                                           class="btn btn-danger">Suprimer</a><br>
+                                        <span class="badge badge-pill badge-dark"> {{ $userProject->created_at }}</span>
+                                    </div>
+
+
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
                 @endforeach
-            </div>
 
-            <div class="col-md-6">
-                <div class="col-md-12 text-center mt-2"><h4 class="mt-3">Mes Dons</h4></div>
-
-                {{--@include('user.don.mesdons')--}}
 
             </div>
-
-
         </div>
-    </div>
 
 
 @endsection

@@ -15,17 +15,17 @@ Auth::routes();
 
 Route::get('/', 'UserController@index')->name('home');
 
-Route::get('/edit','AccountController@edit')->name('user.edit');
+Route::get('/myinformation','AccountController@edit')->name('user.edit');
 Route::put('/update','AccountController@update')->name('user.update');
 
 
-Route::get('/project','ProjectController@index')->name('user.project')->middleware('auth');
+Route::get('/projects','ProjectController@index')->name('user.project')->middleware('auth');
 Route::get('/projectcreate','ProjectController@create')->name('user.projectcreate');
 
 
 Route::post('/projectadd','ProjectController@store')->name('user.projectadd');
 
-Route::get('/project/{id}','ProjectController@edit')->name('user.projectinfo');
+Route::get('/projects/{id}','ProjectController@edit')->name('user.projectinfo');
 
 
 
