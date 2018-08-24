@@ -19,13 +19,13 @@ Route::get('/edit','AccountController@edit')->name('user.edit');
 Route::put('/update','AccountController@update')->name('user.update');
 
 
-Route::get('/project','ProjectController@index')->name('user.project');
+Route::get('/project','ProjectController@index')->name('user.project')->middleware('auth');
 Route::get('/projectcreate','ProjectController@create')->name('user.projectcreate');
 
 
 Route::post('/projectadd','ProjectController@store')->name('user.projectadd');
 
-Route::get('/project/{project}','ProjectController@edit')->name('user.projectinfo')->middleware('auth');
+Route::get('/project/{id}','ProjectController@edit')->name('user.projectinfo');
 
 
 
@@ -36,7 +36,7 @@ Route::get('/myproject/{id}','ProjectController@editmyproject')->name('user.upda
 Route::put('/{idProject}/updatemyproject','ProjectController@update')->name('user.updatevalidate');
 
 
-Route::get('/don','DonsController@index');
+Route::get('/don','DonsController@show')->name('mesdons');
 
 Route::get('/user/get/{id}','DonsController@create')->name('user.don.create');
 Route::post('/user/post/{id}', 'DonsController@store')->name('user.don.store');

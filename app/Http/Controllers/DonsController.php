@@ -13,12 +13,7 @@ class DonsController extends Controller
 
     public function index()
     {
-        $project_name = DB::select('SELECT name FROM projects');
-        dd($project_name);
-        $authuser = Auth::id();
-        $user_dons = DB::select("SELECT amount,user_id,project_id From dons WHERE user_id = {$authuser}");
-        dd($user_dons);
-        return view('user.don.mesdons',['user_dons'=>$user_dons]);
+
     }
 
 
@@ -48,9 +43,11 @@ class DonsController extends Controller
     }
 
 
-    public function show($id)
+    public function show()
     {
-        //
+        $authuser = Auth::id();
+        $user_dons = DB::select("SELECT amount,user_id,project_id From dons WHERE user_id = {$authuser}");
+        return view('user.don.mesdons',['user_dons'=>$user_dons],[]);
     }
 
     public function edit($id)
@@ -58,15 +55,4 @@ class DonsController extends Controller
         //
     }
 
-
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-
-    public function destroy($id)
-    {
-        //
-    }
 }

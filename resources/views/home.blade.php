@@ -16,8 +16,13 @@
                                 <p class="card-text">{{$project->description}}</p>
                                 <span class="badge badge-pill badge-dark"> {{ $project->created_at }} </span> <br>
                             </div>
-
-
+                            @guest
+                            <div class="ml-3 mb-3">
+                                <a class="btn btn-dark" href="{{route('user.projectinfo',['user' => $user], ['projects' => $projects])}}">Info</a>
+                            </div>
+                            @else
+                            <div></div>
+                            @endguest
                         </div>
                     </div>
                 </div>

@@ -13,11 +13,11 @@
         @foreach($user_dons as $user_don)
             <tbody>
             <tr>
-                <th scope="row"></th>
-                <td>{{$user_don->a}}</td>
+                <th scope="row">{{$user_don->project_id}}</th>
+
+                <td>{{$user_don->amount}}</td>
             </tr>
             </tbody>
-            @dd($user_don)
         @endforeach
     </table>
 @stop
